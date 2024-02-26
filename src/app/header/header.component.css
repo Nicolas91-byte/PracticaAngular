@@ -1,0 +1,75 @@
+
+header {
+    font-family: "Comic Sans MS", "Comic Sans", Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+.profile-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+    padding: 20px;
+    background-color: #333;
+    color: #fff;
+}
+
+.profile-header h1 {
+    text-align: center;
+    margin: 0;
+    flex: 1; 
+    animation: girar 2s infinite linear;
+}
+
+@keyframes girar {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+@keyframes move {
+    0% {
+        transform: translateX(100%) translateY(-100%);
+    }
+    50% {
+        transform: translateX(0%) translateY(0%);
+    }
+    100% {
+        transform: translateX(100%) translateY(100%);
+    }
+}
+
+.imagenIzquierda{
+    border-radius:10%;
+    width: 120px;
+    height: 120px;
+}
+
+.imagenIzquierda:hover{
+    animation: girar 5s infinite linear;
+}
+
+#info-img {
+    animation: move 15s linear infinite;
+}
+    
+.imagenUsuario {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    margin-right: auto;
+    transition: transform 0.5s ease;
+}
+.imagenUsuario:hover {
+    border-radius:10%;
+    margin-right: 4%;
+    margin-top: 4%;
+    transform: scale(2.5);
+}

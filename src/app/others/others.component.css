@@ -1,0 +1,36 @@
+.others {
+    font-family: "Comic Sans MS", "Comic Sans", Arial, sans-serif;
+    background-color: #fff;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.others h2 {
+    color: #333;
+    text-align: center;
+}
+
+.others-item {
+    margin-bottom: 20px;
+}
+
+.others-item h3 {
+    text-align: center;
+    color: #333;
+}
+
+.others-item video,
+.others-item audio {
+    width: 100%;
+    max-width: 100%;
+}
+
+.others-item video,
+.others-item audio {
+    width: 100%;
+    max-width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}

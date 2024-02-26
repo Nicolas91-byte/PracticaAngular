@@ -1,0 +1,19 @@
+<section>
+  <h2>Información Personal</h2>
+  <div class="info-item">
+    <p>Nombre: {{ nombre }}</p>
+  </div>
+  <div class="info-item">
+    <p>Edad: {{ edad }} años</p>
+  </div>
+  <div class="info-item">
+    <p>Ubicación: {{ ubicacion }}</p>
+  </div>
+  <div id="info-img">
+    <img class="profile-img" [src]="currentImage" width="30%" height="30%" alt="Imagen personal" />
+  </div>
+  <div class="info-item" ngIf="descripcionActual === descripciones[0]">
+    <p>Descripción: {{ descripcionActual }}</p>
+  </div>
+  <button (click)="descripcionActual = descripciones[(descripciones.indexOf(descripcionActual) + 1) % descripciones.length]; currentImage = (currentImage === '../assets/image.jpg') ? '../assets/image2.jpg' : '../assets/image.jpg'">Gorila Botón</button>
+</section>
